@@ -8,3 +8,24 @@ PrestoDOM follows the Elm architecture which is basically a combination of havin
 
 You can read more about the Elm architecture over [here.](https://guide.elm-lang.org/architecture/)
 
+A simple example looks like the following:
+
+```haskell
+type State = {title :: String}
+
+initialState :: State
+initialState = {title: "Hello World"}
+
+data Action = UpdateTitle | NextScreen
+
+eval :: Action -> State -> Either Action State
+eval UpdateTitle state = Right $ state {title = "Title Updated"}
+eval NextScreen state = Left NextScreen
+
+view :: forall i w eff. (Action -> Eff (frp :: FRP | eff) Unit) -> State -> PrestoDOM Action w
+view push state = linearLayout
+  
+```
+
+
+
