@@ -73,12 +73,10 @@ view push state =
     ]
 
 eval :: Action -> State -> Either Action State
-eval :: Action -> State -> Either Action State
 eval action state =
   case action of
     Increment -> Right state {counter = state.counter + 1}
     Decrement -> Right state {counter = state.counter - 1}
-
 ```
 
 
