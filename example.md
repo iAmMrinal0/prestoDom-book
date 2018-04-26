@@ -2,9 +2,7 @@
 
 We will take an example of a counter which increments or decrements based on a button click.
 
-### 
-
-We will use a `linearLayout` and to show the text we will use a `textView`
+We use a `linearLayout` and to show the text we use a `textView`
 
 Our actions are basically `Increment` or `Decrement`
 
