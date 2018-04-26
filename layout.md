@@ -2,7 +2,11 @@
 
 
 
-# 
-
+* LinearLayout
+* RelativeLayout
+* TextView
+* EditText
+* ImageView
+* 
 
 
