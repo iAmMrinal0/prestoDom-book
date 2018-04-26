@@ -1,6 +1,4 @@
-# Layout
-
-
+# Layouts
 
 * LinearLayout
 * RelativeLayout
