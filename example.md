@@ -1,8 +1,6 @@
 # Example
 
-We will take an example of a counter which increments or decrements based on the button click.
-
-
+We will take an example of a counter which increments or decrements based on a button click.
 
 ### Layouts
 
@@ -11,8 +9,6 @@ We will use a `linearLayout` and to show the text we will use a `textView`
 Our actions are basically `Increment` or `Decrement`
 
 And our state is an object with the count value. We start our state with the counter set to `0` and our `eval` function will handle the state updation for our actions.
-
-
 
 ```haskell
 module Counter where
