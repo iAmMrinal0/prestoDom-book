@@ -22,7 +22,7 @@ import FRP (FRP)
 
 data Action = Increment | Decrement
 
-type State = {counter :: Int}
+type State = Int
 
 screen :: forall i eff. Screen Action State eff Action
 screen =
@@ -32,7 +32,7 @@ screen =
   }
 
 initialState :: State
-initialState = {counter: 0}
+initialState = 0
 
 view :: forall i w eff. (Action -> Eff (frp :: FRP | eff) Unit) -> State -> PrestoDOM Action w
 view push state =
@@ -45,7 +45,7 @@ view push state =
     [ textView
       [ width $ V 80
       , height $ V 25
-      , text $ show state.counter
+      , text $ show state
       , textSize 16
       ]
     , linearLayout
@@ -83,8 +83,9 @@ view push state =
 eval :: Action -> State -> Either Action State
 eval action state =
   case action of
-    Increment -> Right state {counter = state.counter + 1}
-    Decrement -> Right state {counter = state.counter - 1}
+    Increment -> Right $ state + 1
+    Decrement -> Right $ state - 1
+
 ```
 
 
