@@ -6,7 +6,7 @@ PrestoDOM follows the Elm architecture which is basically a combination of havin
 * Eval: a way to update our state
 * View: a way to view our state as HTML
 
-You can read more about the Elm architecture over [here.](https://guide.elm-lang.org/architecture/)
+You can read more about the Elm architecture [here.](https://guide.elm-lang.org/architecture/)
 
 A simple pattern looks like the following:
 
