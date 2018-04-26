@@ -1,10 +1,11 @@
 # Architecture
 
-PrestoDOM follows the Elm architecture which is basically a combination of having 3 specific parts:
+PrestoDOM follows the Elm architecture which is basically a combination of the following specific parts:
 
 * Initial State: the initial state
 * Eval: a way to update our state
 * View: a way to view our state as HTML
+* Screen: an object encapsulating all the other 3 above
 
 You can read more about the Elm architecture [here.](https://guide.elm-lang.org/architecture/)
 
