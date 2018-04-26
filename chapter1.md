@@ -9,6 +9,8 @@ PrestoDOM follows the Elm architecture which is basically a combination of the f
 
 You can read more about the Elm architecture [here.](https://guide.elm-lang.org/architecture/)
 
+                                                        ![](/assets/Screen Shot 2018-04-26 at 19.17.25.png)
+
 A simple pattern looks like the following:
 
 ```haskell
