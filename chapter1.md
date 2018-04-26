@@ -26,6 +26,12 @@ view :: forall i w eff. (Action -> Eff (frp :: FRP | eff) Unit) -> State -> Pres
 view push state =
   linearLayout
   [] []
+
+screen =
+  { initialState
+  , view
+  , eval
+  }
 ```
 
 
