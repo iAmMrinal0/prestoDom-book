@@ -4,7 +4,7 @@ We will take an example of a counter which increments or decrements based on a b
 
 We use a `linearLayout` and to show the text we use a `textView`
 
-Our actions are basically `Increment` or `Decrement`
+Our actions are `Increment` or `Decrement`
 
 And our state is an `Int` with the count value. We start our state with the counter set to `0` and our `eval` function handles the state updation based on our actions.
 
