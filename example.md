@@ -6,7 +6,7 @@ We use a `linearLayout` and to show the text we use a `textView`
 
 Our actions are basically `Increment` or `Decrement`
 
-And our state is an `Int(Integer)` with the count value. We start our state with the counter set to `0` and our `eval` function handles the state updation based on our actions.
+And our state is an `Int` with the count value. We start our state with the counter set to `0` and our `eval` function handles the state updation based on our actions.
 
 ```haskell
 module Counter where
